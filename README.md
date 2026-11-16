@@ -1,27 +1,19 @@
-# MANEEKO
+# MANEEKO approved design — corrected version
 
-**A Little Luck in Every Bite**
+## Fixes
+- No duplicate desktop navigation labels: the desktop header is a single approved screenshot crop with transparent clickable hotspots.
+- Mobile navigation hidden until the Menu button is opened.
+- Three selectable banner slides: approved hero, Momos, Dim Sums. Use dots or arrows to change slides.
+- Products dropdown opens with Momos, Dim Sums and Coming Soon links.
+- Formspree endpoint `https://formspree.io/f/xzereqao` connected.
 
-Responsive static website for MANEEKO, a frozen food brand by N L Industries.
+## Enquiry submissions
+Log into your Formspree account and open the form **xzereqao**, then **Submissions**. Test one enquiry after publishing and confirm it appears there. The form sends data only after successful submission.
 
-## Website
+## Publishing
+Upload the entire `index.html` and `assets/` directory to your GitHub Pages repository root. Do not upload just the HTML without the images. Hard-refresh after deployment.
 
-Open `index.html` in a browser or enable GitHub Pages under **Settings → Pages → Deploy from a branch → main / (root)**.
+## Note
+Desktop screenshot crops are raster graphics. These are a close visual reproduction of the approved reference, not independently editable artwork.
 
-## Sections
-
-- Home
-- Our Story
-- Products (filterable catalogue)
-- Manufacturing
-- B2B Partnerships (enquiry text preparation)
-- Contact
-
-## Before launch
-
-- Replace placeholder mascot and product emoji with approved brand artwork and photography.
-- Add verified business email, telephone, address and manufacturing details.
-- Connect the enquiry form to a secure form backend or business email workflow; it does not send messages currently.
-- Confirm product specifications, pack sizes, storage and compliance details before publishing claims.
-
-No build tools or external dependencies are required.
+Carousel correction: baked-in slider dots removed from the hero image, leaving only one functional set of dots centered below the banner.
