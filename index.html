@@ -116,6 +116,36 @@ section{scroll-margin-top:90px}
 .slider-dot.active{background:#ffcb5d;border-color:#ffcb5d}
 .slider-arrow{display:none}
 @media(max-width:780px){.hero-slider{display:none}.mobile-nav{display:none!important}.mobile-nav.open{display:grid!important}}
+
+/* MANEEKO approved manufacturing redesign */
+.manufacturing-v2{background:#fff8ed;color:#123e30;position:relative;overflow:hidden}
+.manufacturing-v2 .manufacturing-inner{max-width:1440px;margin:auto;padding:75px 32px 68px}
+.manufacturing-v2 .eyebrow{font-weight:800;color:#a63d28;letter-spacing:.09em;text-transform:uppercase;font-size:14px}
+.manufacturing-v2 h2{font:700 clamp(34px,4.5vw,66px) Georgia,serif;color:#073d2a;margin:13px 0 12px}
+.manufacturing-v2 .manufacturing-tagline{font:italic 700 clamp(23px,2.6vw,34px) Georgia,serif;color:#ac3d27;margin:0 0 16px}
+.manufacturing-v2 .manufacturing-intro{max-width:770px;font-size:clamp(16px,1.4vw,19px);line-height:1.65;margin:0}
+.manufacturing-top{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(260px,.75fr);gap:35px;align-items:center}
+.manufacturing-photo{width:100%;aspect-ratio:1.2;object-fit:cover;border-radius:28px;box-shadow:0 16px 40px #2c311522}
+.manufacturing-features{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin:42px 0}
+.manufacturing-feature{border-right:1px solid #e7cf9d;padding:0 15px 0 0}
+.manufacturing-feature:last-child{border:0}
+.manufacturing-feature .feature-icon{display:inline-grid;place-items:center;width:48px;height:48px;border-radius:50%;background:#f9e4b2;color:#a76a07;font-size:25px;margin-bottom:10px}
+.manufacturing-feature h3{font:700 21px Georgia,serif;margin:0 0 8px;color:#073d2a}
+.manufacturing-feature p{font-size:15px;line-height:1.5;margin:0}
+.manufacturing-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.manufacturing-card{padding:26px;border-radius:20px;min-height:220px;background:#eef0dc}
+.manufacturing-card:nth-child(2){background:#fff0d8}
+.manufacturing-card:nth-child(3){background:#fae5e0}
+.manufacturing-card .card-icon{font-size:34px;display:block;margin-bottom:16px}
+.manufacturing-card h3{font:700 clamp(22px,2vw,28px) Georgia,serif;margin:0 0 12px;color:#073d2a}
+.manufacturing-card p{font-size:16px;line-height:1.6;margin:0}
+.manufacturing-action{text-align:center;margin-top:36px}
+.manufacturing-action a{display:inline-block;background:#073d2a;color:white;border-radius:999px;padding:18px 40px;font-weight:700;box-shadow:0 7px 20px #073d2a22}
+.manufacturing-action a:hover,.manufacturing-action a:focus-visible{background:#145b42}
+.manufacturing-note{font-size:12px;opacity:.7;text-align:center;margin-top:17px}
+@media(max-width:900px){.manufacturing-top{grid-template-columns:1fr 1fr}.manufacturing-features{grid-template-columns:repeat(2,1fr)}.manufacturing-feature:nth-child(2){border:0}.manufacturing-cards{grid-template-columns:1fr 1fr}.manufacturing-card:last-child{grid-column:1/-1}}
+@media(max-width:650px){.manufacturing-v2 .manufacturing-inner{padding:52px 20px}.manufacturing-top{grid-template-columns:1fr}.manufacturing-photo{aspect-ratio:16/9}.manufacturing-features{gap:20px}.manufacturing-feature h3{font-size:18px}.manufacturing-cards{grid-template-columns:1fr}.manufacturing-card:last-child{grid-column:auto}.manufacturing-action a{width:100%;padding:17px 18px}}
+
 </style>
 </head>
 <body>
@@ -154,7 +184,32 @@ section{scroll-margin-top:90px}
 <section id="partners" class="partner reference" aria-label="Partner with MANEEKO"><a class="hotspot partner-link" href="#enquiry" aria-label="Send a business enquiry"></a></section>
 <section id="story" class="content split"><div><h2>Meet Manee, our lucky little chef.</h2><p>MANEEKO is a frozen food brand from N L Industries. Inspired by the joy of sharing food, Manee brings a little playfulness and good fortune to every gathering.</p><p>Explore momos, dim sums and future ready-to-cook favourites.</p></div><div class="cat-panel"><img src="assets/mobile-mascot.webp" alt="Manee lucky cat chef"></div></section>
 <section id="catalogue" class="catalogue"><div class="content"><h2>Explore the Range</h2><div id="momos"></div><div id="dimsums"></div><div id="coming-soon"></div><div class="catalogue-grid" id="catalogue-grid"></div><p><small>Illustrative food imagery from the approved design; product photographs and specifications require confirmation.</small></p></div></section>
-<section id="manufacturing" style="background:#f6ead6"><div class="content"><h2>Manufacturing by N L Industries</h2><p>MANEEKO welcomes enquiries from restaurants, cafés, retailers and distributors.</p><p class="notice">Manufacturing location, capacity, certifications, storage requirements, pack sizes and delivery coverage will be added once confirmed.</p></div></section>
+<section id="manufacturing" class="manufacturing-v2" aria-labelledby="manufacturing-heading">
+ <div class="manufacturing-inner">
+  <div class="manufacturing-top">
+   <div>
+    <div class="eyebrow">Manufacturing</div>
+    <h2 id="manufacturing-heading">Manufacturing by N L Industries</h2>
+    <p class="manufacturing-tagline">Crafted with care. Made for consistency.</p>
+    <p class="manufacturing-intro">At MANEEKO, we believe great food starts with quality ingredients and thoughtful preparation. Manufactured by N L Industries, our range of frozen momos is developed for restaurants, cafés, cloud kitchens, retailers and food-service partners.</p>
+   </div>
+   <img class="manufacturing-photo" src="assets/mobile-food.webp" alt="Illustrative steamed dumplings in bamboo baskets" loading="lazy">
+  </div>
+  <div class="manufacturing-features">
+   <div class="manufacturing-feature"><span class="feature-icon" aria-hidden="true">🥬</span><h3>Fresh Ingredients</h3><p>Selected vegetables, paneer and chicken.</p></div>
+   <div class="manufacturing-feature"><span class="feature-icon" aria-hidden="true">⚖</span><h3>Consistent Portions</h3><p>Approximately 21 g per momo for predictable servings.</p></div>
+   <div class="manufacturing-feature"><span class="feature-icon" aria-hidden="true">📦</span><h3>Food-Service Packs</h3><p>Convenient 1 kg packs (approximately 47–48 momos).</p></div>
+   <div class="manufacturing-feature"><span class="feature-icon" aria-hidden="true">🥟</span><h3>Three Varieties</h3><p>Veg, Paneer and Chicken momos for diverse menus.</p></div>
+  </div>
+  <div class="manufacturing-cards">
+   <article class="manufacturing-card"><span class="card-icon" aria-hidden="true">📦</span><h3>Convenient 1 kg Food-Service Packs</h3><p>MANEEKO momos are approximately 21 g per piece, with around 47–48 momos in a 1 kg pack.</p></article>
+   <article class="manufacturing-card"><span class="card-icon" aria-hidden="true">🥬</span><h3>Fresh Ingredients, Every Day</h3><p>Our recipes bring together carefully selected vegetables, paneer and chicken for flavour and consistency.</p></article>
+   <article class="manufacturing-card"><span class="card-icon" aria-hidden="true">🥟</span><h3>Protein-Focused Recipes</h3><p>Explore our Veg, Paneer and Chicken momo range, designed to offer variety and satisfying menu choices.</p></article>
+  </div>
+  <div class="manufacturing-action"><a href="#enquiry">Partner with Us (B2B Enquiry) →</a></div>
+  <p class="manufacturing-note">Product imagery is illustrative. Final specifications and nutritional information are subject to verification.</p>
+ </div>
+</section>
 <section id="enquiry" class="enquiry"><div class="content split"><div><h2>Let's grow together.</h2><p>Tell us about your business and product requirements.</p><p><small>Enquiries are saved securely after the Formspree connection is configured. Until then, submission is disabled to avoid losing your details.</small></p></div><form class="form" id="form" method="POST">
   <div><label for="name">Your name *</label><input id="name" name="name" autocomplete="name" required maxlength="120"></div>
   <div><label for="business">Business name *</label><input id="business" name="business" required maxlength="160"></div>
