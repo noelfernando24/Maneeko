@@ -1,27 +1,25 @@
-# MANEEKO
+# MANEEKO website refresh
 
-**A Little Luck in Every Bite**
+Six-page static website for MANEEKO, a brand by N L Industries.
 
-Responsive static website for MANEEKO, a frozen food brand by N L Industries.
+## Pages
+- Home: index.html
+- Our Story: story.html
+- Products (filterable): products.html
+- Manufacturing: manufacturing.html
+- B2B Partnerships (email draft form): partnerships.html
+- Contact: contact.html
 
-## Website
-
-Open `index.html` in a browser or enable GitHub Pages under **Settings → Pages → Deploy from a branch → main / (root)**.
-
-## Sections
-
-- Home
-- Our Story
-- Products (filterable catalogue)
-- Manufacturing
-- B2B Partnerships (enquiry text preparation)
-- Contact
+## Local preview
+Open index.html in your browser; no build step is needed. GitHub Pages can be enabled after you review and merge this branch.
 
 ## Before launch
+- Replace YOUR-EMAIL@example.com in partnerships.html. The form opens an email draft; it does **not** send or store submissions. A server-backed/CRM form should be implemented before relying on the form for leads.
+- Replace placeholder contact details and add a verified privacy policy.
+- Replace illustrative product art with approved product photographs.
+- Verify ingredients, allergens, pack sizes, product descriptions, shelf life, cooking/storage guidance and availability.
+- Add actual manufacturing photography and validated certification and compliance details; no unverified claims should be published.
+- Review brand and trademark rights before commercial launch.
 
-- Replace placeholder mascot and product emoji with approved brand artwork and photography.
-- Add verified business email, telephone, address and manufacturing details.
-- Connect the enquiry form to a secure form backend or business email workflow; it does not send messages currently.
-- Confirm product specifications, pack sizes, storage and compliance details before publishing claims.
-
-No build tools or external dependencies are required.
+## Visual identity
+Terracotta #C84F36; gold #D9A441; warm cream #F8F1E5; forest green #315C49. Refreshed SVG logo and mascot are starter illustrations, not final production artwork.
