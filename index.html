@@ -146,6 +146,34 @@ section{scroll-margin-top:90px}
 @media(max-width:900px){.manufacturing-top{grid-template-columns:1fr 1fr}.manufacturing-features{grid-template-columns:repeat(2,1fr)}.manufacturing-feature:nth-child(2){border:0}.manufacturing-cards{grid-template-columns:1fr 1fr}.manufacturing-card:last-child{grid-column:1/-1}}
 @media(max-width:650px){.manufacturing-v2 .manufacturing-inner{padding:52px 20px}.manufacturing-top{grid-template-columns:1fr}.manufacturing-photo{aspect-ratio:16/9}.manufacturing-features{gap:20px}.manufacturing-feature h3{font-size:18px}.manufacturing-cards{grid-template-columns:1fr}.manufacturing-card:last-child{grid-column:auto}.manufacturing-action a{width:100%;padding:17px 18px}}
 
+
+/* Manufacturing visual alignment revision */
+.manufacturing-v2{background:#fff9f0}
+.manufacturing-v2 .manufacturing-inner{max-width:1600px;padding:62px clamp(24px,4vw,72px) 56px}
+.manufacturing-top{grid-template-columns:minmax(0,1.35fr) minmax(340px,.85fr);gap:32px;align-items:center}
+.manufacturing-v2 h2{font-size:clamp(35px,3.55vw,60px);line-height:1.08;letter-spacing:-.025em}
+.manufacturing-v2 .manufacturing-tagline{font-size:clamp(22px,2.1vw,32px)}
+.manufacturing-v2 .manufacturing-intro{font-size:clamp(16px,1.25vw,19px);line-height:1.52}
+.manufacturing-photo{border-radius:0;box-shadow:none;aspect-ratio:1.55;object-position:center;mask-image:linear-gradient(90deg,transparent 0%,#000 20%);-webkit-mask-image:linear-gradient(90deg,transparent 0%,#000 20%)}
+.manufacturing-features{grid-template-columns:repeat(4,minmax(0,1fr));gap:0;margin:34px 0 38px}
+.manufacturing-feature{padding:0 24px;border-right:1px solid #e8cfa1}
+.manufacturing-feature:first-child{padding-left:0}
+.manufacturing-feature:last-child{padding-right:0}
+.manufacturing-feature .feature-icon{width:54px;height:54px;background:#ffebbd;margin:0 0 12px;font-size:25px}
+.manufacturing-feature h3{font-size:clamp(18px,1.55vw,24px);line-height:1.15;margin:0 0 8px}
+.manufacturing-feature p{font-size:clamp(14px,1.1vw,16px);line-height:1.45}
+.manufacturing-cards{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.manufacturing-card{min-height:196px;padding:22px 20px;border-radius:18px;display:grid;grid-template-columns:38% minmax(0,1fr);gap:16px;align-items:center;overflow:hidden}
+.manufacturing-card .card-icon{display:none}
+.manufacturing-card .card-visual{width:100%;height:155px;object-fit:cover;border-radius:14px;display:block;mix-blend-mode:multiply}
+.manufacturing-card h3{font-size:clamp(20px,1.65vw,27px);line-height:1.15;margin:0 0 12px;letter-spacing:-.02em}
+.manufacturing-card p{font-size:clamp(14px,1.04vw,16px);line-height:1.48}
+.manufacturing-action{margin-top:32px}
+.manufacturing-action a{min-width:345px;padding:17px 32px}
+@media(max-width:1100px){.manufacturing-top{grid-template-columns:1.2fr .8fr}.manufacturing-card{grid-template-columns:1fr;padding:20px}.manufacturing-card .card-visual{height:135px}.manufacturing-features{grid-template-columns:repeat(4,minmax(0,1fr))}.manufacturing-feature{padding:0 12px}}
+@media(max-width:780px){.manufacturing-top{grid-template-columns:1fr}.manufacturing-photo{max-height:280px;mask-image:none;-webkit-mask-image:none;border-radius:16px}.manufacturing-features{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:25px}.manufacturing-feature:nth-child(2){border:0}.manufacturing-feature:nth-child(3){padding-left:0}.manufacturing-cards{grid-template-columns:1fr}.manufacturing-card,.manufacturing-card:last-child{grid-template-columns:34% minmax(0,1fr);min-height:180px}.manufacturing-card .card-visual{height:145px}.manufacturing-v2 .manufacturing-inner{padding:48px 20px}}
+@media(max-width:460px){.manufacturing-card,.manufacturing-card:last-child{grid-template-columns:35% minmax(0,1fr);gap:12px;padding:14px}.manufacturing-card h3{font-size:19px}.manufacturing-card p{font-size:13px}.manufacturing-card .card-visual{height:130px}.manufacturing-feature{padding:0 10px}.manufacturing-feature h3{font-size:17px}.manufacturing-action a{min-width:0;width:100%}}
+
 </style>
 </head>
 <body>
@@ -202,9 +230,9 @@ section{scroll-margin-top:90px}
    <div class="manufacturing-feature"><span class="feature-icon" aria-hidden="true">🥟</span><h3>Three Varieties</h3><p>Veg, Paneer and Chicken momos for diverse menus.</p></div>
   </div>
   <div class="manufacturing-cards">
-   <article class="manufacturing-card"><span class="card-icon" aria-hidden="true">📦</span><h3>Convenient 1 kg Food-Service Packs</h3><p>MANEEKO momos are approximately 21 g per piece, with around 47–48 momos in a 1 kg pack.</p></article>
-   <article class="manufacturing-card"><span class="card-icon" aria-hidden="true">🥬</span><h3>Fresh Ingredients, Every Day</h3><p>Our recipes bring together carefully selected vegetables, paneer and chicken for flavour and consistency.</p></article>
-   <article class="manufacturing-card"><span class="card-icon" aria-hidden="true">🥟</span><h3>Protein-Focused Recipes</h3><p>Explore our Veg, Paneer and Chicken momo range, designed to offer variety and satisfying menu choices.</p></article>
+   <article class="manufacturing-card"><img class="card-visual" src="assets/products.webp" alt="Illustrative selection of MANEEKO food products" loading="lazy"><h3>Convenient 1 kg Food-Service Packs</h3><p>MANEEKO momos are approximately 21 g per piece, with around 47–48 momos in a 1 kg pack.</p></article>
+   <article class="manufacturing-card"><img class="card-visual" src="assets/mobile-food.webp" alt="Illustrative freshly prepared dumplings" loading="lazy"><h3>Fresh Ingredients, Every Day</h3><p>Our recipes bring together carefully selected vegetables, paneer and chicken for flavour and consistency.</p></article>
+   <article class="manufacturing-card"><img class="card-visual" src="assets/momos-banner.webp" alt="Illustrative steamed momos" loading="lazy"><h3>Protein-Focused Recipes</h3><p>Explore our Veg, Paneer and Chicken momo range, designed to offer variety and satisfying menu choices.</p></article>
   </div>
   <div class="manufacturing-action"><a href="#enquiry">Partner with Us (B2B Enquiry) →</a></div>
   <p class="manufacturing-note">Product imagery is illustrative. Final specifications and nutritional information are subject to verification.</p>
